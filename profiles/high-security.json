@@ -1,0 +1,21 @@
+{
+  "name": "High Security",
+  "description": "Maximum security settings with NLA and minimal features",
+  "wrapper": "TermWrap",
+  "rdpPort": 3389,
+  "maxConnections": 5,
+  "singleSessionPerUser": true,
+  "allowTsConnections": true,
+  "honorLegacy": false,
+  "nlaLevel": 2,
+  "securityLayer": 2,
+  "shadowOptions": 1,
+  "dontDisplayLastUser": true,
+  "allowHostAudioPlayback": false,
+  "allowClientVideoCapture": false,
+  "allowClientAudioCapture": false,
+  "allowPnpRedirect": false,
+  "restrictUsbToAdmins": true,
+  "addDefenderExclusion": true,
+  "addFirewallRule": true
+}

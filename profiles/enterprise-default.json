@@ -1,0 +1,21 @@
+{
+  "name": "Enterprise Multi-Admin",
+  "description": "Configuration for multiple administrators accessing servers with single shared account",
+  "wrapper": "TermWrap",
+  "rdpPort": 3389,
+  "maxConnections": 10,
+  "singleSessionPerUser": false,
+  "allowTsConnections": true,
+  "honorLegacy": false,
+  "nlaLevel": 1,
+  "securityLayer": 2,
+  "shadowOptions": 0,
+  "dontDisplayLastUser": false,
+  "allowHostAudioPlayback": false,
+  "allowClientVideoCapture": false,
+  "allowClientAudioCapture": false,
+  "allowPnpRedirect": false,
+  "restrictUsbToAdmins": true,
+  "addDefenderExclusion": true,
+  "addFirewallRule": true
+}
