@@ -18,7 +18,6 @@ namespace rdpWrapper {
     public bool Start { get; private set; }
     public bool Stop { get; private set; }
     public bool GenerateConfig { get; private set; }
-    public bool StartUI { get; private set; }
     public bool CreateUser { get; private set; }
 
     // Install parameters
@@ -93,9 +92,6 @@ namespace rdpWrapper {
           }
           else if (arg == "--generate" || arg == "-generate") {
             result.GenerateConfig = true;
-          }
-          else if (arg == "--ui" || arg == "-x") {
-            result.StartUI = true;
           }
           else if (arg == "--create-user") {
             result.CreateUser = true;
@@ -240,7 +236,7 @@ namespace rdpWrapper {
         var commands = new List<bool> {
           result.ShowHelp, result.AutoInstall, result.Install, result.Uninstall,
           result.Status, result.Start, result.Stop, result.GenerateConfig,
-          result.StartUI, result.CreateUser
+          result.CreateUser
         };
         var commandCount = commands.Count(c => c);
 
@@ -366,7 +362,7 @@ SUPPORT:
     /// </summary>
     public bool HasCommand() {
       return ShowHelp || AutoInstall || Install || Uninstall || Status ||
-             Start || Stop || GenerateConfig || StartUI || CreateUser;
+             Start || Stop || GenerateConfig || CreateUser;
     }
   }
 }
